@@ -1,0 +1,100 @@
+.footer {
+  &__top {
+    background-color: rgb(28, 28, 28);
+    // background-color: $primary-color;
+  }
+  &__content {
+    @include laptop {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+    }
+    &__item {
+      display: grid;
+      gap: 2rem;
+      margin-top: 5rem;
+      @include laptop {
+        display: block;
+        margin-top: 0;
+      }
+      &:first-of-type {
+        margin-top: 0;
+      }
+      &__title {
+        color: #fff;
+        &::before {
+          content: none;
+          background-color: #fff;
+        }
+      }
+      &__logo {
+        width: 24rem;
+      }
+      &__text {
+        color: #fff;
+        line-height: 1.6;
+        font-size: 1.5rem;
+        @include laptop {
+          margin-top: 3rem;
+        }
+      }
+      &__redes {
+        display: flex;
+        justify-content: space-around;
+        @include laptop {
+          margin-top: 3rem;
+          justify-content: space-between;
+          max-width: 30rem;
+        }
+        &__icon {
+          background-color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 2.4rem;
+          color: $primary-color;
+          border-radius: 50%;
+          width: 4.6rem;
+          height: 4.6rem;
+          transition: color,background-color .4s;
+          &:hover{
+            background-color: $tertiary-color;
+            color: #fff;
+          }
+        }
+      }
+      &__form {
+        display: grid;
+        gap: 1.5rem;
+        @include laptop {
+          margin-top: 3rem;
+        }
+        &__input {
+          & input,
+          & textarea {
+            padding: 1.3rem;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 0.4rem;
+          }
+        }
+      }
+    }
+  }
+  &__bottom {
+    background-color: rgb(11, 11, 11);
+    padding: 2.5rem 0;
+    position: relative;
+    z-index: 10;
+    @include laptop {
+      z-index: -1;
+    }
+    &__text {
+      color: #fff;
+      text-align: center;
+      line-height: 1.5;
+      font-size: 1.7rem;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.contenido {
+  padding: 2rem 0;
+  &__grid {
+    display: grid;
+    gap: 2rem;
+  }
+  &__button{
+    width: 100%;
+    padding: 1.5rem 1.5rem;
+  }
+}

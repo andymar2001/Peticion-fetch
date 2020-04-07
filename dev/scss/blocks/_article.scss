@@ -1,0 +1,29 @@
+.article {
+  background-color: rgb(240, 240, 240);
+  padding: 2.5rem;
+  &__title {
+    font-family: $main-title;
+    font-size: 3rem;
+  }
+  &__img {
+    width: 15rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+  &__text {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 1.5rem;
+    & span {
+      margin-right: 0.5rem;
+      width: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & svg {
+        font-size: 2.2rem;
+        color: #23a6d5;
+      }
+    }
+  }
+}

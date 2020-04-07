@@ -1,0 +1,31 @@
+.buscador {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  padding: 4rem 0;
+  &__title,
+  &__text {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  &__text {
+    font-size: 1.8rem;
+    margin-top: 0.3rem;
+    text-decoration: underline;
+  }
+  &__form {
+    margin-top: 2.5rem;
+    &__input {
+      width: 100%;
+      padding: 1.3rem 1rem;
+      border-radius: 0.5rem;
+      border: none;
+      &::placeholder {
+        font-family: $main-title;
+      }
+    }
+  }
+  &__button {
+    margin-top: 2rem;
+  }
+}
